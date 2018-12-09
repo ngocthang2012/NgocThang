@@ -1,0 +1,115 @@
+
+.h1{
+	width: 100%;
+	height: 50px;
+
+}
+.ul li{
+	float: left;
+	margin: 10px;
+	
+}
+.ul{
+	width: 100%;
+	margin: auto;	
+	height: 35px;
+ background-color: #8b1313;
+}
+.ul ul{
+	height: 35px;	
+	display: inline-block;
+	
+	margin: 0 auto;
+	    padding-left: 177px;
+	
+}
+.cha1{
+	width: 100%;
+	height: 115px;
+	background-color: #e7e7e7;
+
+}
+.img{
+	    width: 76%;
+}
+.img1{
+	    width: 76%;
+    float: right;
+    margin: 0 auto;
+}
+.imgcon{	
+	    height: 90px;
+	    background-image: url(EZV3A6D4CREHPLDIZGR2W5.jpg);
+	    width: 69%;
+	}
+.cha2{
+	width: 60%;
+
+	margin: 10px auto;
+	background-color: yellow;
+}
+.div1{
+	width: 70%;
+}
+.div2 div{
+	width: 32%;
+	float: left;
+	margin:10px 5px 0 0;
+
+}
+.p h3{
+	float: left;
+}
+.abc{
+	float: left;
+}
+.cha3{
+	width: 24%;
+	background-color: #ededed;
+	padding-top: 1px;
+}
+.cha3 img{
+	width: 94%;
+    padding-left: 7px;
+
+}
+.cha3 p{
+	text-align: center;	
+	margin: 5px 0;
+	
+
+}
+.cha3 div{
+	margin: 15px 0;
+}
+
+.p{
+	border-top: 0.3px solid black;
+}
+.divcon{
+	width: 50%;
+
+}
+.com1 div{
+	float: left;
+}
+.com2 div{
+	float: left;
+}
+.com3 div{
+	float: left;
+}
+.com4 div{
+	float: left;
+
+}
+.com5 div{
+	float: left;
+}
+.com6 div{
+	float: left;
+	
+}
+.bottom li{
+	float: left;
+}
