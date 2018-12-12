@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>abc</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#menu{
+			height: 50px;
+			background: blue;
+			padding-left: 0;
+			margin-left: 1px;
+
+		}
+		.item{
+			line-height: 50px;
+			float: left;
+			list-style: none;
+			padding-left: 30px;
+			padding-right: 10px;
+
+		}
+		.item:first-child{
+			display: none;
+		}
+		.item a {
+			color: white;
+			text-decoration: none;
+		}
+		.item:hover{
+			background: yellow;
+		}
+		.item:hover a{
+			color: red;
+		}
+		@media(max-width: 618px){
+			.item{
+				float: none;
+				display: none;
+			}
+			.item:first-child{
+				display: block;
+				width: 18px;
+			}
+		}
+
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+</head>
+<body>
+	<nav>
+		<ul id="menu" >
+			<li class="item"><i class="fa fa-bars" aria-hidden="true"></i></li>
+			<li class="item"><a href=""><i class="fa fa-home"></i>Home</a></li>
+			<li class="item"><a href="">about</a></li>
+			<li class="item"><a href="">jobs</a></li>
+			<li class="item"><a href="">style</a></li>
+			<li class="item"><a href="">contact</a></li>
+			<li class="item"><a href="">news</a></li>
+			<li class="item"><a href="">control</a></li>
+		</ul>
+	</nav>
+
+</body>
+</html>

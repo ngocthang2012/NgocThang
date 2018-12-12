@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vd</title>
+	<meta charset="utf-8" name="input" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		.box{
+			float: left;
+			width: 25%;
+			height: 200px;
+		}
+		.green{
+			background: green;
+
+		}
+		.red{
+			background: red;
+
+		}
+		.black{
+			background: black;
+
+		}
+		.orange{
+			background: orange;
+
+		}
+		@media (min-width: 500px) and (max-width: 768px) {
+			.box{
+			width: 50%;
+		}
+		}
+		@media (min-width: 600px;){
+			.box{
+			width: 100%;
+		}
+		}
+		@media (max-width: 499px;){
+			.box{
+			width: 100%;
+		}
+		}
+	</style>
+</head>
+<body>
+	<div class="box green"></div>
+	<div class="box red"></div>
+	<div class="box black"></div>
+	<div class="box orange"></div>
+
+</body>
+</html>
