@@ -1,0 +1,169 @@
+.top{
+	width: 100%;
+
+}
+.topcon{
+	width: 80%;
+	margin: 0 auto;
+}
+.topcon span{
+	color: #ff7800;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.align{
+	text-align: center;
+}
+.display{
+	display: inline-block;
+}
+
+ul{
+	list-style: none;
+}
+
+.ul1 li{
+	margin: 0 20px;
+	display: inline-block;
+}
+.ul li{
+	font-size: 30px;
+}
+.tintuc{
+	font-size: 30px;
+
+}
+.tintuc1-content{
+	width: 24%;
+	font-size: 20px;
+
+}
+.tintuc1 p{
+	    margin-top: 50px;
+	font-size: 23;px
+		
+}
+.tintuc1 i{
+	line-height: 80px;
+}
+
+.center div{
+	float: left
+}
+.I{
+	height: 80px;
+	width: 80px;
+	font-size: 40px;
+	background: #ff7800;
+	border-radius: 40px;
+	color: #fff;
+}
+.tintuc2-content h3{
+	font-size: 30px;
+
+}
+.conten1{
+	margin-top: 100px;
+	    margin-bottom: 60px;
+
+}
+
+.divcon{
+    background: oldlace;
+    width: 25%;
+    border-radius: 30px;
+        height: 30px;
+    line-height: 0px;
+    margin-bottom: 100px;
+}
+.ceo{
+	width: 80%;
+	 margin: 60px auto;
+}
+.ceo >div{
+	width: 23%;
+	margin: 0 5px;
+}
+.ceo p {
+	font-size: 15px;
+}
+.bottom{
+	background: #292929;
+	margin-top: 100px;
+	color:#fff;
+	border-radius: 9px;
+}
+.bottom p{
+	font-size: 15px;
+}
+.bottom1{
+	background: black;
+
+}
+.bottom1 div{
+	width: 80%; 
+	margin: 0 auto;
+	color: #fff;
+	}
+.bottom1 li {
+	margin: 0 10px;
+}
+.bottom ul{
+	margin: 0;
+    line-height: 57px;
+}
+.div1{
+	width: 90%;
+	margin: 0 auto
+}
+.div1 >div{
+	width: 30%;
+}
+.div2 {
+	width: 80%; margin: 0 auto;
+}
+.div2 >div{
+	width: 30%;
+	margin: 0 1%;
+}
+.div2 hr{
+	width: 100%;
+}
+.cong-cu{
+	background:#ff7800;
+	width: 100%;
+	margin: 0 auto 30px;
+	border-radius: 30px;
+}
+.cong-cu >div{
+	width: 45%;margin: 100px auto 100px;
+}
+.FURCHASE-NOW{
+	margin:0 -1% 0 27%;
+}
+.icon i{
+	font-size:30px;	
+}
+.the-i{
+	width: 40%;
+}
+.the-i i{
+	line-height: 80px
+}
+.the-i2{
+	width: 60%;
+}
+.img1{
+	width: 80%;margin: 0 auto;
+}
+.img1 img{
+	width: 50%;
+}
+.main{
+	width: 100%;
+	margin-top: 40px;
+}
