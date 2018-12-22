@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<input type="text" name="" id="txt" onfocus="change()" onblur="reset()">
+<input type="button" name="" value="click">
+<select id="opt" onchange="change()">
+	<option value="1"></option>
+	<option value="2"></option>
+	<option value="3"></option>
+</select>
+<script type="text/javascript">
+	function change() {
+		// body...
+		var txt=document.getElementById("txt");
+		txt.style.background = 'yellow';
+	}
+	function reset() {
+		// body...
+	var txt=document.getElementById("txt");
+		txt.style.background = 'white';
+	}
+</script>
+</body>
+</html>

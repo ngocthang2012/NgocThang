@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vd1</title>
+</head>
+<body>
+	Họ Tên : <input id="txt"type="text" name="" value=""  class="thang">
+	<span id="content" style="color: orange"></span>
+	<input id="txt"type="text" name="" value=""   class="thang">
+	<input type="button" name="" value="=>click" onclick="thang()">
+	<script type="text/javascript">
+		function thang() {
+			// body...
+			//var fullname = document.getElementById("txt");
+			//var fullname = document.getElementsByTagName("input");
+			
+			var fullname = document.getElementsByClassName("thang");
+
+			fullname[0].value="Nguyễn Ngọc Thắng";
+			fullname[1].value="Nguyễn Ngọc Thắng";
+			var content=document.getElementById("content");
+			content.innerHTML="Nguyễn Ngọc Thắng";
+			content.style.border="1px solid red";
+			content.style.fontWeight="900";
+			content.style.fontSize="20px";
+
+		}
+	</script>
+
+</body>
+</html>

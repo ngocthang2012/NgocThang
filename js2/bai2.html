@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bài 2</title>
+</head>
+<style type="text/css">
+.ong{
+	width: 100%;
+}
+.cha{
+	width: 40%;
+	background:#7a9ec5;
+	margin: 0 auto;
+}
+.element{
+	border:1px solid black;
+	height: 45px;
+	margin: -1px;
+}	
+.element input{
+	margin: 15px;
+	border: 1px solid black;
+}
+.buton{
+	border:1px solid black;
+	    padding: 10px;
+}
+.element:hover{
+	background-color: #14ad10;
+}
+
+</style>
+<body>
+	<div class="ong">
+		<div class="cha">
+			<form>
+				<div class="element" onmouseover="" onmouseout="">
+					<input type="checkbox" name="check" id="check0" >
+					<span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+				</div>
+				<div class="element" onmouseover="" onmouseout="">
+					<input type="checkbox" name="check" id="check0">
+					<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+				</div>
+				<div class="element" onmouseover="" onmouseout="">
+					<input type="checkbox" name="check" id="check0">
+					<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+				</div>
+				<div class="element" onmouseover="" onmouseout="">
+					<input type="checkbox" name="check" id="check0">
+					<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+				</div>
+				<div class="element" onmouseover="" onmouseout="">
+					<input type="checkbox" name="check" id="check0">
+					<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+				</div>
+				<div class="element" onmouseover="" onmouseout="">
+					<input type="checkbox" name="check" id="check0">
+					<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+				</div>
+				<div class="element" onmouseover="" onmouseout="">
+					<input type="checkbox" name="check" id="check0">
+					<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+				</div>
+				<div class="element" onmouseover="" onmouseout="">
+					<input type="checkbox" name="check" id="check0">
+					<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+				</div>
+
+			</form>
+			<div class="buton">
+				<input type="button" name="" value="checkall" onclick="checkall()">
+				<input type="button" name="" value="uncheckall" onclick="uncheckall()">
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function checkall() {
+			// body...
+			for (var i = 0; i < document.querySelectorAll('form div input').length; i++) {
+				document.querySelectorAll('form div input')[i].checked=true;
+			}
+		}
+		function uncheckall(){
+			for (var i = 0; i < document.querySelectorAll('form div input').length; i++) {
+				document.querySelectorAll('form div input')[i].checked=false;
+			}
+		}
+	</script>
+
+</body>
+</html>

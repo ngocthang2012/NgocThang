@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+Giá : <span>2.000.000 vnđ</span>
+<select id="opt" >
+	<option value="1">black</option>
+	<option value="2">yellow</option>
+	<option value="3">white</option>
+</select>
+<script type="text/javascript">
+	var opt=document.getElementById("opt");
+	opt.addEventlistener("change",change);
+	function change() {
+		// body...
+		var gia=document.getElementsByTagName("span")[0];
+		var opt=document.getElementById("opt");
+		if (opt.value=="1") {
+			gia.innerHTML="4.000.000";
+		}else
+
+	}
+</script>
+</body>
+</html>

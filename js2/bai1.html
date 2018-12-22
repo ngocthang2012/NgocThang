@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.cha{
+			width: 60%;
+			margin: 0 auto;
+			}
+		.con{
+			width: 55%;
+			border:1px black solid;
+			padding: 20px;
+		}
+		.text {
+				font-size: 100%;
+			}
+	</style>
+</head>
+<body>
+	<div class="cha">	
+		<div class="con">
+			<h2>Cỡ chữ</h2>
+			<input type="button" name="" value="Mặc Định" onclick="increase0()">
+			<input type="button" name="" value="Tăng" onclick="increase1()" id="increase1">
+			<input type="button" name="" value="Giảm" onclick="increase2()">
+	</div>
+	
+		<p class="text">Tạo 1 trang HTML như hình bên dưới, khi chuột di qua dòng nào thì dòng đó chuyển sang màu xanh lá cây. Khi người dùng click vào nút “Check all” thì tất cả các ô check box đều được check. Khi người dùng click vào nút “Uncheck all” thì bỏ check tất cả các dòng.</p>
+	</div>
+	
+
+	<script type="text/javascript">
+		var increase = 0; 
+		function increase0() {
+				for(var i = 0; i< document.getElementsByClassName('text').length; i++) {
+					document.getElementsByClassName('text')[i].style.fontSize="100%";
+				}
+		}
+		function increase1() {
+			// body...
+			for(var i = 0; i< document.getElementsByClassName('text').length; i++) {
+
+					increase += 40;
+					document.getElementsByClassName('text')[i].style.fontSize=(increase + 100) + "%";
+				}
+		}
+		function increase2() {
+			// body...
+			for(var i = 0; i< document.getElementsByClassName('text').length; i++) {
+
+					increase -= 40;
+					document.getElementsByClassName('text')[i].style.fontSize=(increase + 100) + "%";
+				}
+		}
+	</script>
+
+</body>
