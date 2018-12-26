@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#cha{
+			width: 50%;
+			margin: 0 auto;
+			height: 350px;
+			position: relative;
+
+		}
+		.hinhanh{
+			max-width: 100%;
+			max-height: 100%;
+			min-width: 100%;
+			min-height: 100%;
+		}
+		.button_con{
+			width: 20px;
+			height: 20px;
+			margin: 3px;
+			cursor: pointer;
+			border:1px solid white;
+			border-radius: 6px;
+
+		}
+		.button_cha{
+			width: 40%;
+			height: 30px;
+			right: 0px;
+			position: absolute;
+			bottom: 1px;
+			opacity: 0.7;
+		}
+		#truoc 
+		{
+			position: absolute;
+			top: 40%;
+			left: 0px;
+			cursor: pointer;
+			background: gray;
+			opacity: 0.7;
+			width: 50px;
+		
+		}
+		#sau
+		{
+			position: absolute;
+			top: 40%;
+			right: 0px;
+			cursor: pointer;
+			background: gray;
+			opacity: 0.7;
+			width: 50px;
+		}
+	</style>
+	<script type="text/javascript" >
+			window.onload = function(){
+				document.getElementById('cha').addEventListener('mouseover', function() {
+					document.getElementById('truoc').style.display="block";
+					document.getElementById('sau').style.display="block";
+				});
+				document.getElementById('cha').addEventListener('mouseout', function() {
+					document.getElementById('truoc').style.display="none";
+					document.getElementById('sau').style.display="none";
+				});
+
+				var imgSlide 	= document.getElementsByClassName("hinhanh");
+				var truoc 		= document.getElementById('truoc');
+				var sau		= document.getElementById('sau');
+				var numbSide = 0;
+
+				chuyenanh();
+
+				// button
+
+				truoc.addEventListener('click', function() {
+					numbSide--;
+					showSlide();
+				});
+
+				sau.addEventListener('click', function() {
+					numbSide++;
+					showSlide();
+				});
+				// end button
+
+				function chuyenanh() {
+					for(var i = 0; i < imgSlide.length; i++) {
+						imgSlide[i].style.display="none";
+					}
+
+					numbSide++;
+					if(numbSide < 0) {
+						numbSide = imgSlide.length - 1;
+					}
+					if(numbSide > imgSlide.length) {
+						numbSide = 1;
+					}
+
+					imgSlide[numbSide-1].style.display="block";
+
+					setTimeout(chuyenanh, 5000);
+				}
+
+				function showSlide() {
+					for(var i = 0; i < imgSlide.length; i++) {
+						imgSlide[i].style.display="none";
+					}
+
+					if(numbSide < 1) {
+						numbSide = imgSlide.length;
+					}
+					if(numbSide > imgSlide.length) {
+						numbSide = 1;
+					}
+
+					imgSlide[numbSide-1].style.display="block";
+				}
+			}
+
+			function anh(n) {
+				for(var i = 0; i < document.getElementsByClassName("hinhanh").length; i++) {
+					document.getElementsByClassName("hinhanh")[i].style.display="none";
+				}
+				document.getElementsByClassName("hinhanh")[n].style.display="block";
+			}
+		</script>
+</head>
+<body>
+	<center id="cha">
+		<img src="160623_rua_o_Con_Dao_landtourcondao.jpg" class="hinhanh">
+		<img src="photo1495960429394-1495960429646-0-27-314-533-crop-1495960477814.jpg" class="hinhanh">
+		<img src="rb.jpg" class="hinhanh">
+		<img src="san-ho-1.jpg" class="hinhanh">
+		<img src="Vietnamesemarineecosystems.jpg" class="hinhanh">
+		<div class="button_cha">
+			<input type="button" name="" class="button_con" onclick="anh(0)">
+			<input type="button" name="" class="button_con" onclick="anh(1)">
+			<input type="button" name="" class="button_con" onclick="anh(2)">
+			<input type="button" name="" class="button_con" onclick="anh(3)">
+			<input type="button" name="" class="button_con" onclick="anh(4)">
+		</div>
+		<img src="Arrow-Back-2-icon.png" id="truoc">
+			<img src="Arrow-Back-2-icon - Copy.png" id="sau">
+	</center>
+
+</body>
+</html>
