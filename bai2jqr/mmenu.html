@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+		<title>ngọc thắng</title>
+		<style type="text/css">
+			.header{
+				width:90%;
+				
+			}
+			.blog{
+				float: right;
+				margin-left: 40px;
+
+			}
+			.content{
+				text-align: center;
+			}
+			
+		</style>
+		<link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+		<link rel="stylesheet" href="Css/jquery.mmenu.all.css">
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mmenu.all.js"></script>
+
+		<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+		<!-- <script type="text/javascript" src="../dist/jquery.mmenu.all.js"></script> -->
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu({
+					extensions	: [ 'fx-menu-slide', 'shadow-page', 'shadow-panels', 'listview-large', 'pagedim-white' ],
+					iconPanels	: true,
+					counters	: true,
+					keyboardNavigation : {
+						enable	: true,
+						enhance	: true
+					},
+					searchfield : {
+						placeholder	: 'tìm kiếm...'
+					},
+					navbar : {
+						title : 'Advanced menu'
+					},
+					navbars	: [
+						{
+							position	: 'top',
+							content		: [ 'searchfield' ]
+						}, {
+							position	: 'top',
+							content		: [ 'breadcrumbs', 'close' ]
+						}, {
+							position	: 'bottom',
+							content		: [ '<a href="http://mmenu.frebsite.nl/wordpress-plugin" target="_blank">WordPress plugin</a>' ]
+						}
+					]
+
+				}, {
+					searchfield : {
+						clear : true
+					}
+				});
+			});
+		</script>
+	</head>
+	<body background="">
+		<div id="page">
+			<div class="header">
+				<a href="#menu" ><img src="menu.png" style="width: 20px"></a>
+				Menu
+				<a href="#"><span class="blog">âm nhạc</span></a>
+				<a href="#"><span class="blog">thể thao </span></a>
+				<a href="#"><span class="blog">tin tức</span></a>
+				<a href="#"><span class="blog">option</span></a>
+
+			</div><br><br><br>
+			<div class="content">
+
+				<h1>QUỲNH BÚP BÊ</h1>
+				<span><img src="48365516_409537273114799_7391472952153210880_n.jpg"><img src="49484234_1833892056720170_7184433529663520768_n.png" style="width: 175px"></span>
+			
+			</div>
+			<nav id="menu">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><span>thể thao</span>
+						<ul>
+							<li><a href="#about/history">History</a></li>
+							<li><span>bóng đá</span>
+								<ul>
+									<li><a href="#about/team/management">việt nam</a></li>
+									<li><a href="#about/team/sales">tây ban nha</a></li>
+									<li><a href="#about/team/development">bồ đào nha</a></li>
+								</ul>
+							</li>
+							<li><span>bóng chuyền</span>
+								<ul>
+									<li><a href="#about/team/management">việt nam</a></li>
+									<li><a href="#about/team/sales">tây ban nha</a></li>
+									<li><a href="#about/team/development">bồ đào nha</a></li>
+								</ul>
+							</li>
+							
+						</ul>
+					</li>
+					<li><span>âm nhạc</span>
+						<ul>
+							<li><a href="#about/history">History</a></li>
+							<li><span>việt nam</span>
+								<ul>
+									<li><a href="#about/team/management">sơn tùng</a></li>
+									<li><a href="#about/team/sales">hà múp</a></li>
+									<li><a href="#about/team/development">bùi anh tuấn</a></li>
+								</ul>
+							</li>
+							<li><a href="#about/address">Our address</a></li>
+						</ul>
+					</li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</body>
+</html>
